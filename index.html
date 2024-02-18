@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus-Ticket</title>
 
-    <!-- custom css -->  
+    <!-- custom css -->
 
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
@@ -208,11 +208,13 @@
                     </div>
                   </div>
                   <div class="box bg-[#f7f8f8] px-5 rounded-xl mt-5">
-                    <div class="flex justify-between p-5 border-b-2">
+                    <div
+                      class="flex justify-between p-5 border-b-2 border-dashed">
                       <p class="grow-0">Route</p>
                       <p class="grow-0 font-bold">Dhaka - Sylhet</p>
                     </div>
-                    <div class="flex justify-between p-5 border-b-2">
+                    <div
+                      class="flex justify-between p-5 border-b-2 border-dashed">
                       <p class="grow-0">Departure Time</p>
                       <p class="grow-0 font-bold">9:00 PM</p>
                     </div>
@@ -244,11 +246,11 @@
             <div class="parttwo bg-white mt-10 rounded-xl flex gap-5 py-10">
               <div class="left pl-10 w-3/4 border-r-2 border-dotted pr-5">
                 <div class="upperbody">
-                  <div class="border-b-2 pb-5">
+                  <div class="border-b-2 pb-5 border-dashed">
                     <h2 class="text-2xl font-bold">Select Your Seat</h2>
                   </div>
                   <div
-                    class="my-5 flex justify-between py-5 border-b-2 border-gray-300">
+                    class="my-5 flex justify-between py-5 border-b-2 border-dashed border-gray-300">
                     <div class="flex justify-between items-center gap-2">
                       <img src="./images/seat-gray.png" alt="" />
                       <h3 class="font-medium text-lg">Available</h3>
@@ -263,9 +265,10 @@
                 </div>
                 <div class="lowerbody">
                   <div class="first__row flex justify-end pr-10 py-5">
-                    <kbd class="kbd w-28"
-                      ><img src="./images/steering-wheel.png" width="20px"
-                    /></kbd>
+                    <p
+                      class="w-28 h-10 bg-[#f2f2f2] flex justify-center items-center rounded-xl p-3 shadow-md border-2">
+                      <img src="./images/steering-wheel.png" width="20px" />
+                    </p>
                   </div>
                   <div class="rest__rows my-5 gap-10 flex flex-col">
                     <div class="row flex justify-around items-center">
@@ -403,12 +406,13 @@
               </div>
               <div class="right pr-10 w-2/4">
                 <div class="seat">
-                  <div class="border-b-2 pb-5">
+                  <div class="border-b-2 pb-5 border-dashed">
                     <h2 class="text-2xl font-bold">Select Your Seat</h2>
                   </div>
                   <div>
                     <div class="box bg-[#f7f8f8] px-5 rounded-xl mt-5">
-                      <div class="flex justify-between p-5 border-b-2">
+                      <div
+                        class="flex justify-between p-5 border-b-2 border-dashed">
                         <p class="grow-0 font-bold">
                           Seat
                           <span
@@ -425,10 +429,17 @@
                           id="order"
                           class="orders flex justify-between p-2 flex-col"></div>
                         <div
-                          class="total flex justify-between items-center border-t-2 py-3">
+                          class="total flex justify-between items-center border-t-2 py-3 border-dashed">
                           <h2 class="font-semibold">Total Price</h2>
                           <p class="font-semibold">
                             BDT <span id="totalPrice">0</span>
+                          </p>
+                        </div>
+                        <div
+                          class="total flex justify-between items-center border-t-2 py-3 border-dashed">
+                          <h2 class="font-semibold">Discount Price</h2>
+                          <p class="font-semibold">
+                            BDT <span id="discountPrice">0</span>
                           </p>
                         </div>
                         <div class="py-5">
