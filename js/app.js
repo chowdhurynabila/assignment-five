@@ -1,4 +1,4 @@
-const kbd = document.getElementsByClassName("kbd");
+const kbd = document.getElementsByClassName("kbd");  
 
 let totalOrder = 0;
 
