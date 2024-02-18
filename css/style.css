@@ -1,0 +1,18 @@
+@tailwind base;
+#order > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@tailwind components;
+@tailwind utilities;
+
+.border-custom {
+  border: 2px solid #00d333;
+  color: #00d333;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
